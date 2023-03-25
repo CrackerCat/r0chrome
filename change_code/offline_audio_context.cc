@@ -91,6 +91,7 @@ OfflineAudioContext* OfflineAudioContext::Create(
             ExceptionMessages::kInclusiveBound));
     return nullptr;
   }
+  // add
   sample_rate += get_random_audio_num();
   if (!audio_utilities::IsValidAudioBufferSampleRate(sample_rate)) {
     exception_state.ThrowDOMException(
